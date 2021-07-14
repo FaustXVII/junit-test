@@ -17,12 +17,11 @@ final class GameManager {
 
     void startNewGame(){
         output.displayGameRules();
+        output.displayCreditsToSpend(state);
         startGameRound();
     }
 
     private void startGameRound(){
-        output.displayCreditsToSpend(state);
-
         howMuchYouWannaBet();
         onWhatOutcomeDoYouBet();
         rollTheDice();
